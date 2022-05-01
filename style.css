@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body{
+    height: 100vh;
+} */
+/*NAV*/
+nav{
+    display: flex;
+    height: 80px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 2rem;
+    background-color: rgb(248, 241, 227);
+    position: fixed;
+    top: 0;
+    
+}
+
+.close{
+    display: none;
+}
+
+.hamburger, .close, .logo, .mini-icons{
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+
+.mini-icons a{
+    margin: 0px 15px;
+}
+
+.hidden-menu{
+    height: 100vh;
+    position: fixed;
+    top: 8%;
+    overflow: hidden;
+    width: 0;
+    transition: all .5s ease-in;
+}
+
+.hidden-menu ul{
+    height: 92%;
+    display: grid;
+    grid-template-rows: repeat(5,20%);
+    align-items: center;
+    list-style-type: none;
+}
+
+.hidden-menu ul li{
+    height: 100%; 
+    border-bottom: 1px solid black;
+}
+
+.hidden-menu ul li a{
+    height: 100%;
+    text-decoration: none;
+    display: block;
+    color: black;
+    /* background-color: aqua; */
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 4.3rem;
+}
+
+/* HOME */
+
+#home{
+    /* height: 100vh; */
+    padding: 8% 12% 6% 12% ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.home-img{
+    width: 250px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.home-text{
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.home-text p{
+    padding: 1rem .3rem;
+    text-indent: 2rem;
+    text-align: justify;
+}
+
+/*ABOUT*/
+#about{
+    /* height: 100vh; */
+    padding: 8% 12% 6% 12% ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.about-img{
+    width: 350px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.about-text{
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.about-text p{
+    padding: 1rem .3rem;
+    text-indent: 2rem;
+    text-align: justify;
+}
+
+#skills{
+    /* height: 100vh; */
+    padding: 8% 12% 6% 12% ;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#skills ul{
+    list-style-type: none;
+}
+
+.skills-head{
+    text-align: center;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills-grid img{
+    width: 100px;
+    height: auto;
+}
+
+.grid-item{
+    border: 1px solid gray;
+    box-shadow: 0 0 10px 1px rgb(148, 146, 146);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-inline: 20px;
+    padding: 15px 0;
+}
+
+
+@media (min-width:850px){
+
+    main{
+        width: calc(100% - 200px);
+        transform: translateX(200px);
+        position: relative;
+        z-index: -1;
+    }
+
+    .hidden-menu{
+        width: 200px;
+    }
+
+    .close, .hamburger{
+        display: none;
+    }
+
+    #home{
+        padding: 5% 5% ;
+        flex-wrap: nowrap;
+    }
+    .home-img{
+        width: auto;
+        height: 300px;
+        border-radius: 30px;
+        
+    }
+    
+    .home-image{
+        align-self: center;
+    }
+    .home-text, .about-text{
+        line-height: 2rem;
+        text-align: center;
+        align-self: center;
+    }
+    
+    .home-text p,.about p{
+        padding: 1rem .3rem;
+        text-indent: 2rem;
+        text-align: justify;
+    }
+
+    .about-img{
+        width: 600px;
+    }
+
+    .skills-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media(min-width:1024px){
+    .home-img{
+        width: auto;
+        height: 500px;
+        border-radius: 30px;  
+    }
+}
+
+
+
