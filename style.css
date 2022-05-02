@@ -60,7 +60,7 @@ nav{
     position: fixed;
     top: 80px;
     overflow: hidden;
-    background: hsl(0, 0%, 100%, .2) ;
+    background: hsla(0, 0%, 100%, .4) ;
     backdrop-filter: blur(1rem);
     width: 0;
     transition: all .5s ease-in;
@@ -127,7 +127,6 @@ main{
 
 /*ABOUT*/
 #about{
-    /* height: 100vh; */
     padding: 8% 12% 6% 12% ;
     display: flex;
     justify-content: center;
@@ -159,7 +158,6 @@ main{
 /*SKILLS*/
 
 #skills{
-    /* height: 100vh; */
     padding: 8% 12% 6% 12% ;
     display: flex;
     flex-direction: column;
@@ -249,7 +247,7 @@ main{
 /* CONTACT */
 
 #contact{
-    padding-inline: 2rem;
+    padding:0 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -262,12 +260,6 @@ form{
     gap: 1.5rem;
 }
 
-.form-line{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 1rem;
-}
-
 label{
     font-weight: 700;
 }
@@ -275,10 +267,11 @@ label{
 input{
     border: none;
     border-bottom: 1px solid #000;
+    width: 90%;
 }
 
 textarea{
-    max-width: 100%;
+    width: 90%;
     overflow: auto;
     border: none;
     border-bottom: 1px solid #000;
@@ -321,8 +314,7 @@ footer p{
 
 footer a{
     float: right;
-    display: inline-block;
-    padding-bottom: 1rem;
+    margin: 0;
     padding-right: 2rem;
     text-decoration: none;
     font-size: 1.5rem;
@@ -363,7 +355,6 @@ footer a{
     .hidden-menu{
         width: 200px;
         background-color: rgb(248, 241, 227);
-        /* background: hsl(0, 100%, 0%, .8) ; */
         backdrop-filter: none;
     }
 
@@ -434,6 +425,10 @@ footer a{
         order:-1;
     }
 }
+
+
+
+
 
 
 
