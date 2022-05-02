@@ -16,8 +16,8 @@
                 <li class="nav-item"><a href="#home">HOME</a></li>
                 <li class="nav-item"><a href="#about">ABOUT</a></li>
                 <li class="nav-item"><a href="#skills">SKILLS</a></li>
-                <li class="nav-item"><a href="#">PORTFOLIO</a></li>
-                <li class="nav-item"><a href="#">CONTACT</a></li>
+                <li class="nav-item"><a href="#portfolio">PORTFOLIO</a></li>
+                <li class="nav-item"><a href="#contact">CONTACT</a></li>
             </ul> 
         </div>
         <div class="navbar">
@@ -29,11 +29,11 @@
             </div>
 
             <div class="mini-icons">
-                <a href="#" class="minis"><i class="fa-brands fa-github"></i></a>
-                <a href="#" class="minis"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/emreozturanli" target="_blank" class="minis"><i class="fa-brands fa-github git"></i></a>
+                <a href="https://www.linkedin.com/in/emreozturanli/" target="_blank" class="minis"><i class="fa-brands fa-linkedin linked"></i></a>
             </div>
             <div class="logo">
-            EMRE
+            <a href="#home">EMRE</a> 
             </div> 
         </div>
         
@@ -96,8 +96,78 @@
                 </div>
             </div>
         </div>
+        <div id="portfolio">
+            <div class="portfolio-head">
+                <h1>My projects</h1>
+            </div>
+            <div class="portfolio-grid">
+                <div class="project-1 project">
+                    <div class="project-text">
+                        <h2>Kids' Zoo</h2>
+                        <p>HTML, CSS, JavaScript</p>
+                         <a href="https://emreozturanli.github.io/Kids-Zoo/" target="_blank">VIEW PROJECT</a> 
+                    </div>
+                    
+                    <div class="project-1-image">
+                        <img class="project-1-img" src="img/kids-zoo.png" alt="project-image">
+                    </div>
+                </div> 
+                <div class="project-2 project">
+                    <div class="project-text">
+                        <h2>Calculator</h2>
+                        <p>HTML, CSS, JavaScript</p>
+                         <a href="https://emreozturanli.github.io/Calculator-HTML-CSS-JS/" target="_blank">VIEW PROJECT</a> 
+                    </div>
+                    
+                    <div class="project-2-image">
+                        <img class="project-2-img" src="img/calculator.png" alt="project-image">
+                    </div>
+                </div> 
+                <div class="project-3 project">
+                    <div class="project-text">
+                        <h2>Simon Game</h2>
+                        <p>HTML, CSS, JavaScript, jQuery</p>
+                        <a href="https://emreozturanli.github.io/Simon-Game/" target="_blank">VIEW PROJECT</a> 
+                    </div>
+                    
+                    <div class="project-3-image">
+                        <img class="project-3-img" src="img/simon-game.png" alt="project-image">
+                    </div>
+                </div> 
+                <!-- <div class="project-4 project"></div>    -->
+            </div>
+            
+        </div>
+        <div id="contact">
+            <h1>LET'S TALK ABOUT ANYTHING YOU WANT</h1>
+            <p>Fill in the form to contact me or send an email to emreozturanli1@gmail.com</p>
+            <form action="">
+
+                <div class="form-line line-1">
+                    <label for="name"><sup>FULL NAME* </sup> </label>
+                <input type="text" name="name" id="name" required >
+                </div>
+                <div class="form-line line-2">
+                    <label for="email"><sup>EMAIL ADDRESS*</sup> </label>
+                <input type="email" name="email" id="email" required >
+                </div>
+                <div class="form-text line-3">
+                    <label for="comment"><sup>FEEL FREE TO ASK ANYTHING*</sup> </label> <br>
+                <textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
+                </div>
+                
+                
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
         
     </main>
+
+    <footer>
+        <h1>2022</h1>
+        <p>Emre Özturanlı</p>
+        <a href="#home">TO TOP <i class="fa-solid fa-arrow-up"></i> </a> 
+    </footer>
 
 
     <script src="script.js"></script>
