@@ -47,13 +47,18 @@ nav{
     color: #000;
 }
 
-.git:hover{
+.git{
     color: orangered;
 }
-
-.linked:hover{
-    color: blue;
+/* .git:hover{
+    color: orangered;
+} */
+.linked{
+    color: #0A66C2;
 }
+/* .linked:hover{
+    color: blue;
+} */
 
 .hidden-menu{
     height: calc(100vh - 80px);
@@ -127,6 +132,7 @@ main{
 
 /*ABOUT*/
 #about{
+    
     padding: 8% 12% 6% 12% ;
     display: flex;
     justify-content: center;
@@ -191,7 +197,21 @@ main{
     margin-bottom: 30px;
     margin-inline: 20px;
     padding: 15px 0;
+    opacity: 0;
 }
+
+.grid-item.fade-right{
+    animation: fade-right 1s ease forwards;
+}
+
+@keyframes fade-right{
+
+    0%{ transform: translateX(600px); opacity: 0;} 
+    100%{ transform: translateX(0); opacity: 1;} 
+
+}
+
+
 
 /* PORTFOLIO */
 
@@ -226,7 +246,7 @@ main{
     background-color: #EEE4AB;
 }
 .project-2{
-    background-color: #f2f0ec;
+    background-color: #B4E197;
 }
 .project-3{
     background-color: #99C4C8;
@@ -242,6 +262,35 @@ main{
     width: 300px;
     height:auto;
     border-radius: 30px;
+}
+
+.project-image{
+    opacity: 0;
+}
+
+.project-image.fade-bottom{
+    animation: fade-bottom 1s ease forwards;
+}
+
+@keyframes fade-bottom {
+    
+    0%{ transform: translateY(600px); opacity: 0;} 
+    100%{ transform: translateY(0); opacity: 1;} 
+}
+
+
+.project-text{
+    opacity: 0;
+}
+
+.project-text.fade-top{
+    animation: fade-top 1s ease forwards;
+}
+
+@keyframes fade-top {
+    
+    0%{ transform: translateY(-600px); opacity: 0;} 
+    100%{ transform: translateY(0); opacity: 1;} 
 }
 
 /* CONTACT */
@@ -299,9 +348,10 @@ button:hover{
 /*FOOTER*/
 
 footer{
+    margin-top: 1rem;
     padding: 2rem 0;
     text-align: center;
-
+    
 }
 
 footer h1{
@@ -319,8 +369,9 @@ footer a{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
-
+    color: orangered;
 }
+
 
 @media (min-width:620px){
     .project-1-img{
@@ -425,10 +476,6 @@ footer a{
         order:-1;
     }
 }
-
-
-
-
 
 
 
