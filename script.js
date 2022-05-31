@@ -1,28 +1,25 @@
 
 let hamburger = document.querySelector(".hamburger")
-
 let close = document.querySelector(".close");
 
 hamburger.addEventListener('click', () => {
-    
-    
-    document.querySelector('.hidden-menu').style.width='40%';
 
-    hamburger.style.display = "none";
-    close.style.display = "block";
+    document.querySelector('.hidden-menu').classList.toggle('show');
 
+    if(hamburger.innerHTML == '<i class="fa-solid fa-x "></i>'){
+        hamburger.innerHTML = '<i class="fa-solid fa-bars "></i>';
+    }else{
+        hamburger.innerHTML = '<i class="fa-solid fa-x "></i>';
+    }
 })
 
-
-close.addEventListener('click', ()=>{
+window.addEventListener('resize', ()=>{
+    if(window.innerWidth > 850){
+        document.querySelector('.hidden-menu').classList.remove('show');
+        hamburger.innerHTML = '<i class="fa-solid fa-bars "></i>';
+    }
     
-    document.querySelector('.hidden-menu').style.width='0';
-
-    hamburger.style.display = "block";
-    close.style.display = "none";
 })
-
-
 /* BoundingClientRect */
 
 let elements = document.querySelectorAll('.grid-item');

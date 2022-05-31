@@ -27,12 +27,12 @@ nav{
     
 }
 
-.close{
-    display: none;
-    margin-right:4px;
-}
 
-.hamburger, .close, .logo, .mini-icons{
+
+.fa-x{
+    padding-right: 4px;
+}
+.hamburger, .logo, .mini-icons{ 
     padding: 1rem 1rem;
     cursor: pointer;
 }
@@ -50,15 +50,11 @@ nav{
 .git{
     color: orangered;
 }
-/* .git:hover{
-    color: orangered;
-} */
+
 .linked{
     color: #0A66C2;
 }
-/* .linked:hover{
-    color: blue;
-} */
+
 
 .hidden-menu{
     height: calc(100vh - 80px);
@@ -69,6 +65,10 @@ nav{
     backdrop-filter: blur(1rem);
     width: 0;
     transition: all .5s ease-in;
+}
+
+.show{
+    width: 40%;
 }
 
 .hidden-menu ul{
@@ -409,7 +409,7 @@ footer a{
         backdrop-filter: none;
     }
 
-    .close, .hamburger{
+    .hamburger{  
         display: none;
     }
 
@@ -427,6 +427,7 @@ footer a{
     .home-image{
         align-self: center;
     }
+
     .home-text, .about-text{
         line-height: 2rem;
         text-align: center;
@@ -474,6 +475,10 @@ footer a{
 
     .project-2-image{
         order:-1;
+    }
+
+    p{
+        font-size: 1.5rem;
     }
 }
 
